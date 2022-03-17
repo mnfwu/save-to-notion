@@ -7,13 +7,6 @@ const envFilePath = path.resolve(__dirname, ".env");
 
 const readEnvVars = () => fs.readFileSync(envFilePath, "utf-8").split(os.EOL);
 
-// const getEnvValue = (key) => {
-//   // find the line that contains the key (exact match)
-//   const matchedLine = readEnvVars().find((line) => line.split("=")[0] === key);
-//   // split the line (delimiter is '=') and return the item at index 2
-//   return matchedLine !== undefined ? matchedLine.split("=")[1] : null;
-// };
-
 const setEnvValue = (key, value) => {
   const envVars = readEnvVars();
   const targetLine = envVars.find((line) => line.split("=")[0] === key);

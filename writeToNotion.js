@@ -16,7 +16,6 @@ const writeToNotion = async (linesArr) => {
       children: [
         {
           type: "code",
-          //TODO add comment option
           code: {
             rich_text: [
               {
