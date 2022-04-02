@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 const handleArgs = require("./lib/handleArgs");
 const checkEnvVars = require("./lib/checkEnvVars");
 const readAndCopy = require("./lib/readAndCopy");
