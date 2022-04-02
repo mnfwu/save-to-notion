@@ -36,4 +36,8 @@ const exampleFn = () => {
 // stnend
 ```
 
-Note: Currently, only works with languages that use `//` for comments, which includes Javascript, Rust, Java, C++.
+### Options
+`-h`  Help
+`-l`  Set programming language
+
+Note: stn currently supports Javascript, Rust, Java, C++.
