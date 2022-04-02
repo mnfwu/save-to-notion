@@ -37,7 +37,7 @@ const exampleFn = () => {
 ```
 
 ### Options
-`-h`  Help
-`-l`  Set programming language
+`-h`  Help   
+`-l`  Set programming language  
 
 Note: stn currently supports Javascript, Rust, Java, C++.
