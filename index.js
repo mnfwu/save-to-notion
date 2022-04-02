@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 
-const readAndCopy = require("./readAndCopy");
-const writeToNotion = require("./writeToNotion");
-const checkEnvVars = require("./checkEnvVars");
+const handleArgs = require("./lib/handleArgs");
+const checkEnvVars = require("./lib/checkEnvVars");
+const readAndCopy = require("./lib/readAndCopy");
+const writeToNotion = require("./lib/writeToNotion");
 
 const main = async () => {
   try {
+    const isArgsReady = handleArgs();
     const isEnvReady = checkEnvVars();
-    if (isEnvReady) {
+    if (isEnvReady && isArgsReady) {
       const copiedLines = await readAndCopy();
       await writeToNotion(copiedLines);
     }
