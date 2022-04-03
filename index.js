@@ -18,7 +18,3 @@ const main = async () => {
 };
 
 main();
-
-// stn
-const test = "test";
-// stnend
